@@ -9,16 +9,16 @@ import (
 
 
 
-func main(){
+//func main(){
+//
+//
+//	f := newFile(10, "./test.txt")
+//
+//	fmt.Println("f: ", f)
+//
+//}
 
-
-	f := newFile(10, "./test.txt")
-
-	fmt.Println("f: ", f)
-
-}
-
-func main1() {
+func main() {
 	http.HandleFunc("/hello", hello)
 
 	http.HandleFunc("/weather/", func(w http.ResponseWriter, r *http.Request) {
