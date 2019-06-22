@@ -4,9 +4,21 @@ import (
 	"encoding/json"
 	"net/http"
 	"strings"
+	"fmt"
 )
 
-func main() {
+
+
+func main(){
+
+
+	f := newFile(10, "./test.txt")
+
+	fmt.Println("f: ", f)
+
+}
+
+func main1() {
 	http.HandleFunc("/hello", hello)
 
 	http.HandleFunc("/weather/", func(w http.ResponseWriter, r *http.Request) {
